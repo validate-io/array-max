@@ -26,12 +26,20 @@
     "validate.io",
     "validate",
     "validation",
-    "validator"
+    "validator",
+    "valid",
+    "array",
+    "max",
+    "maximum",
+    "is",
+    "isarray"
   ],
   "bugs": {
     "url": "https://github.com/validate-io/array-max/issues"
   },
-  "dependencies": {},
+  "dependencies": {
+    "validate.io-array": "^1.0.3"
+  },
   "devDependencies": {
     "chai": "2.x.x",
     "mocha": "2.x.x",

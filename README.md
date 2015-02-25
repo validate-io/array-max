@@ -17,18 +17,35 @@ For use in the browser, use [browserify](https://github.com/substack/node-browse
 ## Usage
 
 ``` javascript
-var foo = require( 'validate.io-array-max' );
+var isValid = require( 'validate.io-array-max' );
 ```
 
-#### foo( value )
+#### isValid( value, max )
 
-What does this function do?
+Validates if a `value` is an `array` in which no element exceeds a maximum value.
+
+``` javascript 
+var value = ['b','c','d'],
+	max = 'e';
+
+var bool = isValid( value, max );
+// returns true
+```
 
 
 ## Examples
 
 ``` javascript
-var foo = require( 'validate.io-array-max' );
+var isValid = require( 'validate.io-array-max' );
+
+console.log( isValid( ['b','c','d'], 'e' ) );
+// returns true
+
+console.log( isValid( [], 'a' ) );
+// returns true
+
+console.log( isValid( ['b','c','d'], 'c' ) );
+// returns false
 ```
 
 To run the example code from the top-level application directory,
